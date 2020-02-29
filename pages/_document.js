@@ -1,21 +1,22 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
-import theme from '../src/theme';
+import theme from '../src/ui/theme';
 
 export default class MyDocument extends Document {
   render() {
     return (
       <html lang="en">
         <Head>
+          <meta charSet="utf-8" />
+          <link rel="icon" href="/favicon.png" />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:100,400,400i,700|Roboto:300,400,500,700&display=swap" />
+
         </Head>
-        <body>
+        <body style={{margin:0}}>
           <Main />
           <NextScript />
         </body>

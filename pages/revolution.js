@@ -53,8 +53,8 @@ export default function Revolution(props) {
                 <title key="title">The Revolution - Cutting-Edge Software | Arc Development</title>
                 <meta name="description" key="description" content="Visionary insights, coupled with cutting-edge technology, is a recipe for revolution. Get a free online estimate instantly "/>
                 <meta property="og:title" content="Bringing West Coast Technology to the Midwest | The Revolution" key="og:title"/>
-                <meta property="og:url" key="og:url" content="arc.com/revolution"/>
-                <link rel="canonical" key="canonical" href="arc.com/revolution"/>
+                <meta property="og:url" key="og:url" content="material-ui-charles.herokuapp.com/revolution"/>
+                <link rel="canonical" key="canonical" href="material-ui-charles.herokuapp.com/revolution"/>
             </Head>
             <Grid item className={classes.rowContainer} style={{ marginTop: "2em" }}>
                 <Typography variant="h1" gutterBottom align={matchesMD ? "center" : undefined} style={{ fontFamily: "Pacifico", fontWeight: 300 }}>The Revolution</Typography>

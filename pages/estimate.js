@@ -724,8 +724,8 @@ export default function Estimate(props) {
         <title key="title">Free Custom Software Estiamte | Arc Development</title>
         <meta name="description" key="description" content="Use our free online estimate calculator to instantly check the cost of your custom software, mobile app, or website design and development project!"/>
         <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Free Estimate" key="og:title"/>
-        <meta property="og:url" key="og:url" content="arc.com/estimate"/>
-        <link rel="canonical" key="canonical" href="arc.com/estimate"/>
+        <meta property="og:url" key="og:url" content="material-ui-charles.herokuapp.com/estimate"/>
+        <link rel="canonical" key="canonical" href="material-ui-charles.herokuapp.com/estimate"/>
       </Head>
       <Grid item container direction="column" alignItems={matchesMD ? "center" : undefined} lg>
         <Grid item style={{ marginTop: "2em", marginLeft: matchesMD ? 0 : '5em' }}>

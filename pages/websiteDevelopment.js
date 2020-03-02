@@ -46,8 +46,8 @@ export default function WebsiteDevelopment(props) {
                 <title key="title">Stunning Custome Website Design | Arc Development</title>
                 <meta name="description" key="description" content="Completely custom designed and built fron scratch to be blazing fast. Optimized code. server-side rendering, and perfect responsive design | 99% PageSpeed Score"/>
                 <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Website" key="og:title"/>
-                <meta property="og:url" key="og:url" content="arc.com/website"/>
-                <link rel="canonical" key="canonical" href="arc.com/website"/>
+                <meta property="og:url" key="og:url" content="material-ui-charles.herokuapp.com/website"/>
+                <link rel="canonical" key="canonical" href="material-ui-charles.herokuapp.com/website"/>
             </Head>
             <Grid item container justify={matchesMD ? "center" : undefined} className={classes.rowContainer} style={{ marginTop: matchesXS ? "1em" : "2em" }}>
                 <Hidden mdDown>

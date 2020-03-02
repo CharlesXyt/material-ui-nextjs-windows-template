@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://arc.com/about</loc>
+    <loc>https://material-ui-charles.herokuapp.com/about</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/contact</loc>
+    <loc>https://material-ui-charles.herokuapp.com/contact</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/customSoftware</loc>
+    <loc>https://material-ui-charles.herokuapp.com/customSoftware</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/estimate</loc>
+    <loc>https://material-ui-charles.herokuapp.com/estimate</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com</loc>
+    <loc>https://material-ui-charles.herokuapp.com</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/mobileApp</loc>
+    <loc>https://material-ui-charles.herokuapp.com/mobileApp</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/revolution</loc>
+    <loc>https://material-ui-charles.herokuapp.com/revolution</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/services</loc>
+    <loc>https://material-ui-charles.herokuapp.com/services</loc>
     <lastmod>2020-03-02</lastmod>
   </url>,<url>
-    <loc>https://arc.com/websiteDevelopment</loc>
+    <loc>https://material-ui-charles.herokuapp.com/websiteDevelopment</loc>
     <lastmod>2020-03-02</lastmod>
   </url>
 </urlset>

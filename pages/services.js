@@ -57,8 +57,8 @@ export default function Services(props) {
                 <title key="title">Top Custom Software Development Services | Arc Development</title>
                 <meta name="description" key="description" content="Cutting-edge software, mobile app, and website development services with sleek custom designs - get a free online estimate instantly"/>
                 <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Services" key="og:title"/>
-                <meta property="og:url" key="og:url" content="arc.com/services"/>
-                <link rel="canonical" key="canonical" href="arc.com/services"/>
+                <meta property="og:url" key="og:url" content="material-ui-charles.herokuapp.com/services"/>
+                <link rel="canonical" key="canonical" href="material-ui-charles.herokuapp.com/services"/>
             </Head>
             <Grid item>
                 <Typography variant="h1" gutterBottom style={{ marginLeft: matchesSM ? 0 : "2em", marginTop: matchesSM ? "1em" : "2em" }} align={matchesSM ? "center" : undefined}>

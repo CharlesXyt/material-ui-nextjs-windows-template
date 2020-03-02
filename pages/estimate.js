@@ -740,7 +740,7 @@ export default function Estimate(props) {
           return (
             <React.Fragment key={index}>
               <Grid item>
-                <Typography variant="h1" align="center" style={{ fontWeight: 500, fontSize: "2.25rem", marginTop: "5em", margin: matchesSM ? "1em" : 0 }}>
+                <Typography variant="h1" align="center" style={{ fontWeight: 500, fontSize: "2.25rem", marginTop:matchesSM ? "1em": "5em"}}>
                   {question.title}
                 </Typography>
                 <Typography variant="body1" align="center" style={{ marginBottom: "2.5em" }} gutterBottom>
@@ -785,7 +785,7 @@ export default function Estimate(props) {
           </Grid>
           <Grid item>
             <IconButton disabled={navigationForwardDisabled()} onClick={nextQuestion}>
-              <img src={navigationForwardDisabled() ? "/assets/forwardArrowDisabled" : "/assets/forwardArrow.svg"} alt="Next question" />
+              <img src={navigationForwardDisabled() ? "/assets/forwardArrowDisabled.svg" : "/assets/forwardArrow.svg"} alt="Next question" />
             </IconButton>
 
           </Grid>

@@ -127,7 +127,7 @@ export default function LandingPage(props) {
     const theme = useTheme()
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
-    const { setValue, setMenuItemSelected } = props
+    const { setValue, setSelectedIndex } = props
 
     const defaultOptions = {
         loop: true,
@@ -185,10 +185,10 @@ export default function LandingPage(props) {
                                 celebration
                             </span>
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/customsoftware" onClick={() => { setValue(1); setMenuItemSelected(1) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/customsoftware" onClick={() => { setValue(1); setSelectedIndex(1) }}>Learn more</Button>
                     </Grid>
                     <Grid item className={classes.icon}>
-                        <img alt="custom software icon" src="/assets/customSoftware.svg" />
+                        <img alt="custom software icon" src="/assets/customSoftware.svg" width="100%"/>
                     </Grid>
                 </Grid>
             </Grid>
@@ -206,10 +206,10 @@ export default function LandingPage(props) {
                             Integration your web experience or create a standalone{matchesSM ? null : <br />}
                             with either mobile platform.
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/mobileapp" onClick={() => { setValue(1); setMenuItemSelected(2) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/mobileapp" onClick={() => { setValue(1); setSelectedIndex(2) }}>Learn more</Button>
                     </Grid>
                     <Grid item className={classes.icon} style={{ marginRight: matchesSM ? 0 : "5em" }}>
-                        <img alt="mobile icon" src="/assets/mobileIcon.svg" />
+                        <img alt="mobile icon" src="/assets/mobileIcon.svg" width="100%"/>
                     </Grid>
                 </Grid>
             </Grid>
@@ -226,10 +226,10 @@ export default function LandingPage(props) {
                         <Typography variant="subtitle1">
                             Optimized for Search Engines, built for speed
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/websites" onClick={() => { setValue(1); setMenuItemSelected(3) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/websites" onClick={() => { setValue(1); setSelectedIndex(3) }}>Learn more</Button>
                     </Grid>
                     <Grid item className={classes.icon}>
-                        <img alt="Website icon" src="/assets/websiteIcon.svg" />
+                        <img alt="Website icon" src="/assets/websiteIcon.svg" width="100%"/>
                     </Grid>
                 </Grid>
             </Grid>

@@ -68,7 +68,7 @@ export default function CallToAction(props){
                 marginLeft:matchesSM ? 0 :"5em",textAlign:matchesSM ? "center":"inherit"
                 }}>
                 <Grid container direction="column">
-                    <Typography variant="h2">
+                    <Typography variant="h1">
                         Simple Software.<br/>Revolutionary Results
                     </Typography>
                     <Typography variant="subtitle2" style={{fontSize:"1.5rem"}}>

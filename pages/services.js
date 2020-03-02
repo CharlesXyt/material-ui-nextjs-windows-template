@@ -48,7 +48,7 @@ export default function Services(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
-    const { setValue, setMenuItemSelected } = props
+    const { setValue, setSelectedIndex } = props
 
 
     return (
@@ -79,7 +79,7 @@ export default function Services(props) {
                             Integration your web experience or create a standalone{matchesSM ? null : <br />}
                             with either mobile platform.
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/mobileapp" onClick={() => { setValue(1); setMenuItemSelected(2) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/mobileapp" onClick={() => { setValue(1); setSelectedIndex(2) }}>Learn more</Button>
                     </Grid>
                     <Grid item style={{ marginRight: matchesSM ? 0 : "5em" }}>
                         <img alt="mobile icon" src="/assets/mobileIcon.svg" className={classes.icon} />
@@ -102,7 +102,7 @@ export default function Services(props) {
                                 celebration
                             </span>
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/customsoftware" onClick={() => { setValue(1); setMenuItemSelected(1) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/customsoftware" onClick={() => { setValue(1); setSelectedIndex(1) }}>Learn more</Button>
                     </Grid>
                     <Grid item >
                         <img alt="custom software icon" src="/assets/customSoftware.svg" className={classes.icon} />
@@ -124,7 +124,7 @@ export default function Services(props) {
                         <Typography variant="subtitle1">
                             Optimized for Search Engines, built for speed
                         </Typography>
-                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/websites" onClick={() => { setValue(1); setMenuItemSelected(3) }}>Learn more</Button>
+                        <Button variant="outlined" className={classes.learnButton} component={Link} href="/websites" onClick={() => { setValue(1); setSelectedIndex(3) }}>Learn more</Button>
                     </Grid>
                     <Grid item style={{ marginRight: matchesSM ? 0 : "5em" }}>
                         <img alt="Website icon" src="/assets/websiteIcon.svg" className={classes.icon} />

@@ -71,7 +71,7 @@ function ElevationScroll(props) {
           marginRight:"25px",
           height:"45px",
           "&:hover":{
-            backgroundColor:theme.palette.secondary.light
+            backgroundColor:theme.palette.secondary.light,
         }
       },
       logContainer:{

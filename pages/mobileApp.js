@@ -38,7 +38,7 @@ export default function MobileApp(props) {
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
-    const { setValue, setMenuItemSelected } = props
+    const { setValue, setSelectedIndex } = props
 
     const defaultOptions = {
         loop: true,
@@ -62,7 +62,7 @@ export default function MobileApp(props) {
             <Grid item container justify={matchesMD ? "center" : undefined} className={classes.rowContainer} style={{ marginTop: matchesXS ? "1em" : "2em" }}>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer} style={{ marginRight: "1em", marginLeft: "-3.5em" }}>
-                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/customsoftware" onClick={() => setMenuItemSelected(1)}>
+                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/customsoftware" onClick={() => setSelectedIndex(1)}>
                             <img src="/assets/backArrow.svg" alt="back to services page" />
                         </IconButton>
                     </Grid>
@@ -86,7 +86,7 @@ export default function MobileApp(props) {
                 </Grid>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer}>
-                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/websites" onClick={() => setMenuItemSelected(3)}>
+                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/websites" onClick={() => setSelectedIndex(3)}>
                             <img src="/assets/forwardArrow.svg" alt="forward to andriod page" />
                         </IconButton>
                     </Grid>

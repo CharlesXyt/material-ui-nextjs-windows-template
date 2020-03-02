@@ -24,13 +24,20 @@ export default createMuiTheme({
             textTransform:'none',
             fontWeight:700,
             fontSize:"1rem",
-            color:"white"
+            color:"white",
+            "&:hover":{
+                textDecoration:"none",
+                opacity:1
+            }
         },
         estimate:{
             fontFamily:"Pacifico",
             fontSize:"1rem",
             textTransform:"none",
-            color:"white"
+            color:"white",
+            "&:hover":{
+                textDecoration:"none"
+            }
         },
         body1:{
             fontWeight:300,
@@ -84,7 +91,10 @@ export default createMuiTheme({
             textTransform:"none",
             borderRadius:50,
             fontFamily:"Roboto",
-            fontWeight:"bold"
+            fontWeight:"bold",
+            "&:hover":{
+                textDecoration:"none"
+            }
 
         },
         caption:{

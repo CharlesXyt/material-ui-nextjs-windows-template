@@ -38,7 +38,7 @@ export default function WebsiteDevelopment(props) {
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
-    const { setValue, setMenuItemSelected } = props
+    const { setValue, setSelectedIndex } = props
 
     return (
         <Grid container direction="column">
@@ -52,7 +52,7 @@ export default function WebsiteDevelopment(props) {
             <Grid item container justify={matchesMD ? "center" : undefined} className={classes.rowContainer} style={{ marginTop: matchesXS ? "1em" : "2em" }}>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer} style={{ marginRight: "1em", marginLeft: "-3.5em" }}>
-                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/mobileapp" onClick={() => setMenuItemSelected(2)}>
+                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/mobileapp" onClick={() => setSelectedIndex(2)}>
                             <img src="/assets/backArrow.svg" alt="back to services page" />
                         </IconButton>
                     </Grid>
@@ -73,7 +73,7 @@ export default function WebsiteDevelopment(props) {
                 </Grid>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer}>
-                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/services" onClick={() => setMenuItemSelected(0)}>
+                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/services" onClick={() => setSelectedIndex(0)}>
                             <img src="/assets/forwardArrow.svg" alt="forward to andriod page" />
                         </IconButton>
                     </Grid>

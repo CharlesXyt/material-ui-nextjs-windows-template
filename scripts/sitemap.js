@@ -4,7 +4,7 @@ const formatDate = require("./formatDate");
 
 // ROBOTS.txt
 const robotsTxt = `User-agent: *
-Sitemap: https://material-ui-charles.herokuapp.com/sitemap_local.xml
+Sitemap: https://nextjs-for-arcproject.now.sh/sitemap_local.xml
 Disallow:`;
 
 fs.writeFileSync("public/robots.txt", robotsTxt);
@@ -22,8 +22,8 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
       path => `<url>
     ${
       path === "/index"
-        ? `<loc>https://material-ui-charles.herokuapp.com</loc>`
-        : `<loc>https://material-ui-charles.herokuapp.com${path}</loc>`
+        ? `<loc>https://nextjs-for-arcproject.now.sh</loc>`
+        : `<loc>https://nextjs-for-arcproject.now.sh${path}</loc>`
     }
     <lastmod>${
       pathsObj[path].lastModified

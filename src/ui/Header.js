@@ -72,6 +72,7 @@ function ElevationScroll(props) {
           height:"45px",
           "&:hover":{
             backgroundColor:theme.palette.secondary.light,
+            textDecoration:"none"
         }
       },
       logContainer:{
@@ -194,7 +195,7 @@ export default function Header(props){
         setSelectedIndex(index)
     }
 
-   
+   console.log(classes.button)
 
     const tabs = (
         <React.Fragment>

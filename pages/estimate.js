@@ -45,7 +45,8 @@ const useStyles = makeStyles(theme => ({
     fontSize: "1.25rem",
     marginTop: "5em",
     "&:hover": {
-      backgroundColor: theme.palette.secondary.light
+      backgroundColor: theme.palette.secondary.light,
+      textDecoration:'none'
     }
   },
   message: {

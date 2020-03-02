@@ -35,7 +35,8 @@ const useStyles = makeStyles(theme => ({
         width: 145,
         marginRight: 40,
         "&:hover": {
-            backgroundColor: theme.palette.secondary.light
+            backgroundColor: theme.palette.secondary.light,
+            textDecoration:'none'
         }
     },
     buttonContainer: {

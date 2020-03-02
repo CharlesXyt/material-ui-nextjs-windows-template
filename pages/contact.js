@@ -50,7 +50,8 @@ const useStyles = makeStyles(theme => ({
         marginRight: "5em",
         marginLeft: "2em",
         "&:hover": {
-            backgroundColor: theme.palette.secondary.light
+            backgroundColor: theme.palette.secondary.light,
+            textDecoration:'none'
         },
         [theme.breakpoints.down("md")]: {
             marginRight: 0,

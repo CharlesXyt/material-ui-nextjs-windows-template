@@ -86,7 +86,7 @@ export default function MobileApp(props) {
                 </Grid>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer}>
-                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/websites" onClick={() => setSelectedIndex(3)}>
+                        <IconButton style={{ backgroundColor: "transparent" }} component={Link} href="/website" onClick={() => setSelectedIndex(3)}>
                             <img src="/assets/forwardArrow.svg" alt="forward to andriod page" />
                         </IconButton>
                     </Grid>

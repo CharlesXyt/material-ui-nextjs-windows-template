@@ -89,7 +89,8 @@ function ElevationScroll(props) {
           ...theme.typography.tab,
           opacity:0.7,
           "&:hover":{
-            opacity:1
+            opacity:1,
+            textDecoration:"none"
           }
       },
       drawerIconContainer:{
@@ -194,8 +195,6 @@ export default function Header(props){
         setValue(1);
         setSelectedIndex(index)
     }
-
-   console.log(classes.button)
 
     const tabs = (
         <React.Fragment>

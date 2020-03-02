@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from '../src/Link'
+import Head from 'next/head'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import {
     Grid,
@@ -41,6 +42,13 @@ export default function WebsiteDevelopment(props) {
 
     return (
         <Grid container direction="column">
+            <Head>
+                <title key="title">Stunning Custome Website Design | Arc Development</title>
+                <meta name="description" key="description" content="Completely custom designed and built fron scratch to be blazing fast. Optimized code. server-side rendering, and perfect responsive design | 99% PageSpeed Score"/>
+                <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Website" key="og:title"/>
+                <meta property="og:url" key="og:url" content="arc.com/website"/>
+                <link rel="canonical" key="canonical" href="arc.com/website"/>
+            </Head>
             <Grid item container justify={matchesMD ? "center" : undefined} className={classes.rowContainer} style={{ marginTop: matchesXS ? "1em" : "2em" }}>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer} style={{ marginRight: "1em", marginLeft: "-3.5em" }}>
@@ -52,7 +60,7 @@ export default function WebsiteDevelopment(props) {
 
                 <Grid item container direction="column" className={classes.heading}>
                     <Grid item>
-                        <Typography variant="h2" align={matchesMD ? "center" : "inherit"}>Website Development</Typography>
+                        <Typography variant="h1" align={matchesMD ? "center" : "inherit"}>Website Development</Typography>
                     </Grid>
                     <Grid item>
                         <Typography variant="body1" paragraph align={matchesMD ? "center" : "inherit"}>

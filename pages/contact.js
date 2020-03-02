@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from '../src/Link'
+import Head from 'next/head'
 import axios from 'axios'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import {
@@ -170,11 +171,19 @@ export default function Contact(props) {
 
     return (
         <Grid container>
+            <Head>
+                <title key="title">Contact Us - | Arc Development</title>
+                <meta name="description" key="description" content="Let us guide you through the custom software design and development process. Send us a message with any of your ideas or questions to get started!"/>
+                <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Contact us" key="og:title"/>
+                <meta property="og:url" key="og:url" content="arc.com/contact"/>
+                <link rel="canonical" key="canonical" href="arc.com/contact"/>
+            </Head>
+
             <Grid item container direction="column" justify="center" alignItems="center" lg={4} xl={3} style={{ marginBottom: matchesSM ? "1em" : matchesMD ? "5em" : 0, marginTop: matchesSM ? "1em" : matchesMD ? "5em" : 0 }}>
                 <Grid item>
                     <Grid item container direction="column">
                         <Grid item>
-                            <Typography variant="h2" style={{ lineHeight: 1 }} align={matchesMD ? "center" : undefined}>Contact Us</Typography>
+                            <Typography variant="h1" style={{ lineHeight: 1 }} align={matchesMD ? "center" : undefined}>Contact Us</Typography>
                             <Typography variant="body1" style={{ color: theme.palette.common.blue }} align={matchesMD ? "center" : undefined}>We're waiting</Typography>
                         </Grid>
                         <Grid item container style={{ marginTop: "2em" }}>
@@ -303,7 +312,7 @@ export default function Contact(props) {
                         marginLeft: matchesMD ? 0 : "3em", textAlign: matchesMD ? "center" : "inherit"
                     }}>
                     <Grid container direction="column">
-                        <Typography variant="h2" align={matchesMD ? "center" : undefined}>
+                        <Typography variant="h1" align={matchesMD ? "center" : undefined}>
                             Simple Software.<br />Revolutionary Results
                         </Typography>
                         <Typography variant="subtitle2" style={{ fontSize: "1.5rem" }} align={matchesMD ? "center" : undefined}>

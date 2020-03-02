@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import Head from 'next/head'
 import Link from '../src/Link'
 import {makeStyles,useTheme} from '@material-ui/core/styles'
 import {
@@ -83,6 +84,13 @@ export default function CustomSoftware(props){
     
     return (
         <Grid container direction="column">
+            <Head>
+                <title key="title">Custom Software Development and Design - Free Estimate</title>
+                <meta name="description" key="description" content="Cutting-edge custom software development with gorgeous designs from scratch - let us optimize your business, solving problems instead of creating new ones"/>
+                <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Custom Software Development" key="og:title"/>
+                <meta property="og:url" key="og:url" content="arc.com/customsoftware"/>
+                <link rel="canonical" key="canonical" href="arc.com/customsoftware"/>
+            </Head>
             <Grid item container justify={matchesMD ? "center": undefined}  className={classes.rowContainer} style={{marginTop:matchesXS ? "1em":"2em"}}>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer} style={{marginRight:"1em",marginLeft:"-3.5em"}}>
@@ -94,7 +102,7 @@ export default function CustomSoftware(props){
                 
                 <Grid item container direction="column" className={classes.heading}>
                     <Grid item>
-                        <Typography variant="h2" align={matchesMD ? "center":"inherit"}>Custom Software Development</Typography>
+                        <Typography variant="h1" align={matchesMD ? "center":"inherit"}>Custom Software Development</Typography>
                     </Grid>
                     <Grid item>
                         <Typography variant="body1" paragraph align={matchesMD ? "center":"inherit"}>

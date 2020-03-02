@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Head from 'next/head'
 import axios from 'axios'
 import { cloneDeep } from 'loadsh'
 import Lottie from 'react-lottie'
@@ -719,9 +720,16 @@ export default function Estimate(props) {
 
   return (
     <Grid container>
+      <Head>
+        <title key="title">Free Custom Software Estiamte | Arc Development</title>
+        <meta name="description" key="description" content="Use our free online estimate calculator to instantly check the cost of your custom software, mobile app, or website design and development project!"/>
+        <meta property="og:title" content="Bringing West Coast Technology to the Midwest | Free Estimate" key="og:title"/>
+        <meta property="og:url" key="og:url" content="arc.com/estimate"/>
+        <link rel="canonical" key="canonical" href="arc.com/estimate"/>
+      </Head>
       <Grid item container direction="column" alignItems={matchesMD ? "center" : undefined} lg>
         <Grid item style={{ marginTop: "2em", marginLeft: matchesMD ? 0 : '5em' }}>
-          <Typography variant="h2" align={matchesMD ? "center" : "inherit"}>Estimate</Typography>
+          <Typography variant="h1" align={matchesMD ? "center" : "inherit"}>Estimate</Typography>
         </Grid>
         <Grid item style={{ maxWidth: "50em", margin: matchesMD ? 0 : "3.5em 5em 0 0" }}>
           <Lottie options={defaultOptions} height="100%" weight="100%" />
@@ -732,7 +740,7 @@ export default function Estimate(props) {
           return (
             <React.Fragment key={index}>
               <Grid item>
-                <Typography variant="h2" align="center" style={{ fontWeight: 500, fontSize: "2.25rem", marginTop: "5em", margin: matchesSM ? "1em" : 0 }}>
+                <Typography variant="h1" align="center" style={{ fontWeight: 500, fontSize: "2.25rem", marginTop: "5em", margin: matchesSM ? "1em" : 0 }}>
                   {question.title}
                 </Typography>
                 <Typography variant="body1" align="center" style={{ marginBottom: "2.5em" }} gutterBottom>
@@ -801,7 +809,7 @@ export default function Estimate(props) {
       >
         <Grid container justify="center">
           <Grid item style={{ marginTop: "1em", marginBottom: "1em" }}>
-            <Typography variant="h2" align="center" >Estimate</Typography>
+            <Typography variant="h1" align="center" >Estimate</Typography>
           </Grid>
         </Grid>
         <DialogContent>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import Head from 'next/head'
 import Link from '../src/Link'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import {
@@ -51,6 +52,13 @@ export default function MobileApp(props) {
 
     return (
         <Grid container direction="column">
+            <Head>
+                <title key="title">IOS/Android Apps Design and Development | Arc Development</title>
+                <meta name="description" key="description" content="Mobile Apps Made Easy | Our cutting-edge mobile app development process lets us build beautifully designed, carefully crafted apps for both iOS and Android"/>
+                <meta property="og:title" content="Bringing West Coast Technology to the Midwest | IOS/Android App Development" key="og:title"/>
+                <meta property="og:url" key="og:url" content="arc.com/mobileapp"/>
+                <link rel="canonical" key="canonical" href="arc.com/mobileapp"/>
+            </Head>
             <Grid item container justify={matchesMD ? "center" : undefined} className={classes.rowContainer} style={{ marginTop: matchesXS ? "1em" : "2em" }}>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowContainer} style={{ marginRight: "1em", marginLeft: "-3.5em" }}>
@@ -62,7 +70,7 @@ export default function MobileApp(props) {
 
                 <Grid item container direction="column" className={classes.heading}>
                     <Grid item>
-                        <Typography variant="h2" align={matchesMD ? "center" : "inherit"}>iOS/Android App Development</Typography>
+                        <Typography variant="h1" align={matchesMD ? "center" : "inherit"}>iOS/Android App Development</Typography>
                     </Grid>
                     <Grid item>
                         <Typography variant="body1" paragraph align={matchesMD ? "center" : "inherit"}>

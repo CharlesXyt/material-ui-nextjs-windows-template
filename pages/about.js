@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {makeStyles,useTheme} from '@material-ui/core/styles'
 import {
     Grid,
@@ -45,9 +46,16 @@ export default function Revolution(props){
 
     return (
         <Grid container direction="column">
+            <Head>
+                <title key="title">About Us - History & Team | Arc Development</title>
+                <meta name="description" key="description" content="We provide the fastest, most modern, affordable, and aesthetic software design and development services in the Midwest. Get a free online estimate now!"/>
+                <meta property="og:title" content="Bringing West Coast Technology to the Midwest | About us" key="og:title"/>
+                <meta property="og:url" key="og:url" content="arc.com/about"/>
+                <link rel="canonical" key="canonical" href="arc.com/about"/>
+           </Head>
 
             <Grid item className={classes.rowContainer} style={{marginTop:"2em",marginBottom:"3em"}}>
-                <Typography variant="h2" align={matchesMD ? "center": undefined}>About us</Typography>
+                <Typography variant="h1" align={matchesMD ? "center": undefined}>About us</Typography>
             </Grid>
             <Grid container justify="center" className={classes.rowContainer}>
                 <Typography variant="h4" align="center" className={classes.missionStatement}>

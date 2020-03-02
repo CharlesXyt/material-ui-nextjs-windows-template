@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
 export default function Footer(props){
 
     const classes = useStyles()
-    const {setValue,setMenuItemSelected} = props
+    const {setValue,setSelectedIndex} = props
 
     return (
         <footer className={classes.footer}>
@@ -75,10 +75,10 @@ export default function Footer(props){
                     </Grid>
                     <Grid item className={classes.gridItem}>
                         <Grid container direction="column" spacing={2}>
-                            <Grid item component={Link} href="/services" className={classes.link} onClick={() =>{setValue(1); setMenuItemSelected(0);} }>Services</Grid>
-                            <Grid item component={Link} href="/customsoftware" className={classes.link} onClick={() =>{setValue(1); setMenuItemSelected(1);} }>Custom Software Development</Grid>
-                            <Grid item component={Link} href="/mobileapp" className={classes.link} onClick={() =>{setValue(1); setMenuItemSelected(2); } }>IOS/Android App Development</Grid>
-                            <Grid item component={Link} href="/websites" className={classes.link} onClick={() =>{setValue(1); setMenuItemSelected(3);} }>Website Development</Grid>
+                            <Grid item component={Link} href="/services" className={classes.link} onClick={() =>{setValue(1); setSelectedIndex(0);} }>Services</Grid>
+                            <Grid item component={Link} href="/customsoftware" className={classes.link} onClick={() =>{setValue(1); setSelectedIndex(1);} }>Custom Software Development</Grid>
+                            <Grid item component={Link} href="/mobileapp" className={classes.link} onClick={() =>{setValue(1); setSelectedIndex(2); } }>IOS/Android App Development</Grid>
+                            <Grid item component={Link} href="/websites" className={classes.link} onClick={() =>{setValue(1); setSelectedIndex(3);} }>Website Development</Grid>
                         </Grid>
                     </Grid>
                     <Grid item className={classes.gridItem}>

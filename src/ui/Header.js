@@ -123,7 +123,7 @@ function ElevationScroll(props) {
 
 export default function Header(props){
 
-    const {value,setValue,menuItemSelected,setMenuItemSelected} = props
+    const {value,setValue,selectedIndex,setSelectedIndex} = props
     const classes = useStyles()
     const theme = useTheme()
     const matches = useMediaQuery(theme.breakpoints.down("md"))
@@ -137,7 +137,7 @@ export default function Header(props){
         {name:"Services",link:"/services",activeIndex:1,selectedIndex:0},
         {name:"Custom Software Developement",link:"/customsoftware",activeIndex:1,selectedIndex:1},
         {name:"IOS/Android App Developement",link:"/mobileapp",activeIndex:1,selectedIndex:2},
-        {name:"Website App Software Developement",link:"/websites",activeIndex:1,selectedIndex:3}
+        {name:"Website App Software Developement",link:"/website",activeIndex:1,selectedIndex:3}
     ]
 
     const routes = [
@@ -156,8 +156,8 @@ export default function Header(props){
                 case `${route.link}`:
                     if(value !== route.activeIndex){
                         setValue(route.activeIndex)
-                        if(route.selectedIndex && route.selectedIndex !== menuItemSelected){
-                            setMenuItemSelected(route.selectedIndex)
+                        if(route.selectedIndex && route.selectedIndex !== selectedIndex){
+                            setSelectedIndex(route.selectedIndex)
                         }
                     }
                     break;
@@ -170,11 +170,11 @@ export default function Header(props){
                     break;
             }
         })
-    },[value,menuItemSelected,menuItem,routes,setValue,setMenuItemSelected])
+    },[value,selectedIndex,menuItem,routes,setValue,setSelectedIndex])
 
     const handleChange = (event,valuePassed) => {
         setValue(valuePassed)
-        setMenuItemSelected(-1)
+        setSelectedIndex(-1)
     }
 
     const handleClick = (event) => {
@@ -191,7 +191,7 @@ export default function Header(props){
     const handleMenuItemClick = (event,index) => {
         handleClose();
         setValue(1);
-        setMenuItemSelected(index)
+        setSelectedIndex(index)
     }
 
    
@@ -239,7 +239,7 @@ export default function Header(props){
                             onClick={(event) => handleMenuItemClick(event,index)} 
                             component={Link} 
                             href={item.link} 
-                            selected={index === menuItemSelected}
+                            selected={index === selectedIndex}
                             >
                             {item.name}</MenuItem>
                     )
